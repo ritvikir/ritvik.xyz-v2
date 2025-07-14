@@ -21,7 +21,7 @@ export default function Home() {
       <div className="mt-10 mb-10">
         <h1 className="font-bold text-gray-300">about</h1>
 
-        <p className="mt-2">hey, im ritvik 👋. </p>
+        <p className="mt-2">hey, im ritvik 👋</p>
         <p className="mt-2">i was born in ohio but now live in san diego, ca</p>
         <p className="mt-2">
           currently im a student at ucla where i help organize la hacks
