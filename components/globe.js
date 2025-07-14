@@ -355,7 +355,7 @@ export default function Map() {
           </div>
         )}
       </div>
-      <p className="text-xs text-gray-300 mt-2">
+      <p className="text-xs text-gray-300 mt-2 mb-10">
         Drag to rotate • Scroll to zoom • Click markers to learn more
       </p>
     </section>
