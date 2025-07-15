@@ -27,7 +27,7 @@ export default function Home() {
           currently im a student at ucla where i help organize la hacks
         </p>
         <p className="mt-2">
-          prev. i was involved with human-computer interaction research at ucsd&apos;s prototlab
+          prev. i was involved with human-computer interaction research at ucsd&apos;s protolab
         </p>
       </div>
       <h1 className="font-bold text-gray-300 mt-5 mb-5">travel log</h1>
