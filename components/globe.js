@@ -197,6 +197,13 @@ const travelLocations = [
     date: "may 2024",
     details: "built houses as part of a service trip in mexico",
   },
+  {
+    name: "new york city, ny",
+    lat: 40.7128,
+    lng: -74.0060,
+    date: "fall 2026",
+    details: "interning at a regulated financial services firm, working on secure systems for institutional assets",
+  },
 
 ];
 
