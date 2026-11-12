@@ -1,28 +1,25 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Status() {
-  var [pstDate, setPstDate] = useState("");
+  const [localDate, setLocalDate] = useState("");
   const [isOnline, setIsOnline] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       const date = new Date();
       const options = {
-        timeZone: "America/Los_Angeles",
         hour: "2-digit",
         minute: "2-digit",
       };
       const formattedDate = date.toLocaleTimeString("en-US", options);
-      setPstDate(formattedDate);
+      setLocalDate(formattedDate.replace(/\s/g, "").toLowerCase());
 
       const hour = date.getHours();
-      setIsOnline(hour >= 8 && hour <= 24); 
+      setIsOnline(hour >= 8 && hour <= 24);
     }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
-
-  pstDate = pstDate.replace(/\s/g, "").toLowerCase();
 
   return (
     <div className="inline-block">
@@ -35,7 +32,7 @@ export default function Status() {
       </div>
       <div className="inline-block ml-1 text-gray-400">
         <p className="text-sm font-medium">
-          {isOnline ? "online" : "offline"}, {pstDate}
+          {isOnline ? "online" : "offline"}, {localDate}
         </p>
       </div>
     </div>
